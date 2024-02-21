@@ -1,0 +1,11 @@
+def formula_pascal(n):
+    fila = [1]
+    y = [0]
+    for i in range(max(n, 0)):
+        print(fila)
+        fila = [l + r for l, r 
+in zip(fila + y, y + fila)]
+    return n >= 1
+
+n = 5 
+formula_pascal(n)
